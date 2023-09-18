@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Box>
+      <Box px={4} py={2}>
         <img src={lab} className="App-logo" alt="logo" />
         <Typography variant="h4">Calculadora LDL</Typography>
         <Typography variant="caption">
@@ -26,18 +26,21 @@ function App() {
         <Stack gap={2} pt={3}>
           <TextField
             type="number"
+            inputMode="numeric"
             variant="outlined"
             label="Colesterol Total (CT)"
             onChange={(e) => setColesterol(Number(e.target.value))}
           />
           <TextField
             type="number"
+            inputMode="numeric"
             variant="outlined"
             label="Colesterol (HDL)"
             onChange={(e) => setHdlColesterol(Number(e.target.value))}
           />
           <TextField
             type="number"
+            inputMode="numeric"
             variant="outlined"
             label="Triglicerídeos (TG)"
             onChange={(e) => setTriglicerideos(Number(e.target.value))}
